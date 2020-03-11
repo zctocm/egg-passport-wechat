@@ -16,7 +16,7 @@
   ],
   "dependencies": {
     "debug": "^4.1.1",
-    "passport-wechat": "^2.0.4"
+    "passport-wechat": "https://github.com/liangyali/passport-wechat.git"
   },
   "devDependencies": {
     "autod": "^3.0.1",

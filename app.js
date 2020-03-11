@@ -10,9 +10,8 @@ function mount(config, app) {
   assert(config.secret, '[egg-passport-wechat] config.passportWechat.secret required');
   config.appID = config.key;
   config.appSecret = config.secret;
-
   // must require `req` params
-  app.passport.use('wechat', new Strategy(config, (req, accessToken, refreshToken, params, profile, done) => {
+  app.passport.use('wechat', new Strategy(config, (req, accessToken, refreshToken, profile, expires_in, done) => {
     // format user
     const user = {
       provider: 'wechat',
@@ -27,7 +26,7 @@ function mount(config, app) {
       privilege: profile.privilege,
       accessToken,
       refreshToken,
-      params,
+      expires_in,
       profile,
     };
     debug('%s %s get user: %j', req.method, req.url, user);

@@ -1,4 +1,4 @@
-# egg-egg-passport-wechat
+# egg-passport-wechat
 
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]

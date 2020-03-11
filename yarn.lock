@@ -5470,10 +5470,9 @@ passport-strategy@1.x.x, passport-strategy@^1.0.0:
   resolved "https://registry.yarnpkg.com/passport-strategy/-/passport-strategy-1.0.0.tgz#b5539aa8fc225a3d1ad179476ddf236b440f52e4"
   integrity sha1-tVOaqPwiWj0a0XlHbd8ja0QPUuQ=
 
-passport-wechat@^2.0.4:
+"passport-wechat@https://github.com/liangyali/passport-wechat.git":
   version "2.0.4"
-  resolved "https://registry.yarnpkg.com/passport-wechat/-/passport-wechat-2.0.4.tgz#9b658bd9b04e534889852165967e2c9be10cfa56"
-  integrity sha1-m2WL2bBOU0iJhSFlln4sm+EM+lY=
+  resolved "https://github.com/liangyali/passport-wechat.git#69112fce521e11ed337b4d818b16a3316f6d01d3"
   dependencies:
     debug latest
     passport "^0.3.0"
